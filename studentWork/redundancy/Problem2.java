@@ -1,3 +1,5 @@
+package studentWork.redundancy;
+
 
 import java.util.Scanner;
 
@@ -10,6 +12,7 @@ public class Problem2 {
         int x = console.nextInt();
         
         int b = 5;
+        b = b - x;
 
         if (x % 3 <= 0) {
             b -= x;
@@ -20,10 +23,8 @@ public class Problem2 {
         } else if (x % 3 == 2) {
             b += -x;
             x += 3;
-        } else {
-            b = -100;
-            x = -100;
         }
         System.out.println("The final values are " + b + " and " + x);
+        console.close();
     }
 }
