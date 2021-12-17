@@ -1,3 +1,5 @@
+package studentWork.csv_parsing;
+
 public class CSV {
     /*
      * Write a method called `parseCSV`.
@@ -25,6 +27,10 @@ public class CSV {
         String input2 = "Second,test,with,the,CSV,Parser,method";
         int columnCount2 = parseCSV(input2);
         System.out.println("Input 2 had " + columnCount2 + " columns");
+    }
+
+    private static int parseCSV(String input2) {
+        return 0;
     }
 
     /*** write your method here ***/

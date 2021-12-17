@@ -5,7 +5,8 @@ import java.util.*;
 public class Game {
     public static void main(String[] args) {
         Scanner coinflip = new Scanner (System.in);
-
+        int quit = 0;
+        while (quit != -1) {
         String userchoice = "";
         System.out.println("Choose Heads or Tales");
         userchoice = coinflip.next();
@@ -26,6 +27,11 @@ public class Game {
         } else {
             System.out.println("The choices were not the same: You lost");
         }
+        System.out.println("Type -1 to quit, or any other number to play again.");
+        quit = coinflip.nextInt();
     }
-    
+    }
+
+
+
 }
